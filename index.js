@@ -17,4 +17,28 @@ productCategories[1] = "Pen";
 console.log(productCategories);
 
 
-//  Exercise 2 : 
+//  Exercise 2 : Push , Pop , Shift , Unshift, Splice
+
+let inventory = [10, 20, 30];
+
+// a
+inventory.push(40);
+console.log(inventory);
+
+// b
+inventory.pop();
+console.log(inventory);
+
+// c 
+inventory.unshift(0);
+console.log(inventory);
+
+// d
+inventory.shift();
+console.log(inventory);
+
+//  e
+
+inventory.splice(1, 1, 25, 35);
+console.log(inventory);
+
