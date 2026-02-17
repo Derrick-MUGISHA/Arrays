@@ -70,3 +70,23 @@ spreadCopy[2] = 50;
 console.log("Original Scores:", originalScores);
 console.log("Spread Copy:", spreadCopy);
 
+ 
+
+// Section 3 : Searching & Checking 
+
+// Exercise 4 : finding Elements by Index and Value
+
+const studentNames = ["Alice", "Bob", "Charlie", "Alice", "David"]
+
+//  a 
+// the indexof, lastindexof = if the first condition is successful it will print out true  then the condition stops 
+console.log(studentNames.indexOf("Alice"));
+// b
+console.log(studentNames.lastIndexOf("Alice"));
+
+//  c
+console.log(studentNames.includes("Charlie")); 
+
+//  d
+console.log(studentNames.includes("Eve"));
+
