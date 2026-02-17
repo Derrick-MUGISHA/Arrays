@@ -42,3 +42,31 @@ console.log(inventory);
 inventory.splice(1, 1, 25, 35);
 console.log(inventory);
 
+
+// Exercise 3 : Shallow Copying of Arrays and the reference trap
+
+// a
+const originalScores = [90, 85, 78];
+//  b
+const referenceCopy = originalScores;  // reference copy, not a new array
+console.log(referenceCopy);
+
+//  c
+
+referenceCopy[0] = 100;
+console.log("Reference Copy:", referenceCopy);
+
+//  b
+
+// The spread operator in JavaScript, denoted by three dots ..., allows an iterable 
+// (like an array or string) or an object to be expanded into individual elements 
+// or properties. It is a versatile tool used for a variety of tasks, primarily 
+// to create shallow copies, merge data, and pass elements to functions efficiently. 
+
+//  d
+const spreadCopy = [...originalScores];  // creates a new array with the same elements
+//  e
+spreadCopy[2] = 50;
+console.log("Original Scores:", originalScores);
+console.log("Spread Copy:", spreadCopy);
+
